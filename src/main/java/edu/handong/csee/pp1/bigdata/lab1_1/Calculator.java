@@ -68,7 +68,7 @@ public class Calculator {
 		print("SUM:" , sum(firstIntArg, secondIntArg));
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
 		print("DV:" , divide(firstIntArg,secondIntArg));
-		print("MOD:", mod(firstIntArg,secondIntArg));
+		System.out.println("MOD: "+ mod(firstIntArg,secondIntArg));
 		print("*:" , multiply(firstIntArg, secondIntArg));
 	}
 
@@ -101,11 +101,11 @@ public class Calculator {
 	}
 
 	int divide(int first, int second) {
-		int quot = -1;
+		int quot = (int)Double.NaN;
 		try {
 			quot = first/second;
 		} catch(ArithmeticException e) {
-			System.out.println("Error:ArithmeticException" + e +"\n");
+			System.out.println("Error:ArithmeticException " + e +"\n");
 		}
 		countForAnyCompution++;
 		localCount++;
@@ -113,12 +113,14 @@ public class Calculator {
 	}
 
 	int mod(int first, int second) {
-		int mod = -1;
+		int mod = (int)Double.NaN;
 		try {
 			mod = first%second;
 		} catch (ArithmeticException e) {
 			System.out.println("Error:ArithmeticExcpetion" + e + "\n");
 		}
+		countForAnyCompution++;
+		localCount++;
 		return mod;
 	}
 
