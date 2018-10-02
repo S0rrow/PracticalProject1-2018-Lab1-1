@@ -100,9 +100,15 @@ public class Calculator {
 	}
 
 	int divide(int first, int second) {
+		int quot = -1;
+		try {
+			quot = first/second;
+		} catch(ArithmeticException e) {
+			System.out.println("Error:ArithmeticException" + e +"\n");
+		}
 		countForAnyCompution++;
 		localCount++;
-		return first / second;
+		return quot;
 	}
 
 	int mod(int first, int second) {
