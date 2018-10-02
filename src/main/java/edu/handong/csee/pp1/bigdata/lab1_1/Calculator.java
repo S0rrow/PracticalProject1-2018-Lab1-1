@@ -64,12 +64,12 @@ public class Calculator {
 
 		countForAnyCompution=0;
 		localCount = 0;
-
+		System.out.println("input:"+firstArg+" "+ secondArg);
 		print("SUM:" , sum(firstIntArg, secondIntArg));
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
-		print("*:" , multiply(firstIntArg, secondIntArg));
 		print("DV:" , divide(firstIntArg,secondIntArg));
 		print("MOD:", mod(firstIntArg,secondIntArg));
+		print("*:" , multiply(firstIntArg, secondIntArg));
 	}
 
 	

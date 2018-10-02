@@ -35,6 +35,8 @@ public class CalculatorTest {
 
 	@Test
 	public void testMultiply() {
+		Calculator myCalc = new Calculator();
+		assertEquals(myCalc.multiply(2, 3), 6);
 		// TODO Complete this test case
 	}
 	
