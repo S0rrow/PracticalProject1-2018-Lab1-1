@@ -69,6 +69,7 @@ public class Calculator {
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
 		print("*:" , multiply(firstIntArg, secondIntArg));
 		print("DV:" , divide(firstIntArg,secondIntArg));
+		print("MOD:", mod(firstIntArg,secondIntArg));
 	}
 
 	
