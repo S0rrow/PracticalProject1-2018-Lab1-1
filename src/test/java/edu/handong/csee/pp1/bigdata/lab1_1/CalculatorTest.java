@@ -29,7 +29,8 @@ public class CalculatorTest {
 	@Test
 	public void testMod() {
 		Calculator myCalc = new Calculator();
-		assertEquals(myCalc.mod(10, 4), 2);
+		assertEquals(myCalc.mod(10, 4), 2, 0.00000001);
+		assertEquals(myCalc.mod(10, 0), Double.NaN, 0.00000001);
 	}
 
 	@Test

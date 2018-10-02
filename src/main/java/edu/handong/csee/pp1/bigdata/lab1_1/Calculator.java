@@ -112,8 +112,8 @@ public class Calculator {
 		return quot;
 	}
 
-	int mod(int first, int second) {
-		int mod = (int)Double.NaN;
+	double mod(int first, int second) {
+		double mod = Double.NaN;
 		try {
 			mod = first%second;
 		} catch (ArithmeticException e) {
