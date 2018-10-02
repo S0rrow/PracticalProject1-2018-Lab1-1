@@ -112,8 +112,13 @@ public class Calculator {
 	}
 
 	int mod(int first, int second) {
-		// TODO implement the body of this method
-		return 0;
+		int mod = -1;
+		try {
+			mod = first%second;
+		} catch (ArithmeticException e) {
+			System.out.println("Error:ArithmeticExcpetion" + e + "\n");
+		}
+		return mod;
 	}
 
 	static int getCount() {
