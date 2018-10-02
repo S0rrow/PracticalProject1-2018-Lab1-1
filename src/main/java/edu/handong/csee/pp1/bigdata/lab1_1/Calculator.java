@@ -67,7 +67,7 @@ public class Calculator {
 		System.out.println("input:"+firstArg+" "+ secondArg);
 		print("SUM:" , sum(firstIntArg, secondIntArg));
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
-		System.out.println("DV: " +divide(firstIntArg,secondIntArg));
+		System.out.println("DV: " + divide(firstIntArg,secondIntArg));
 		System.out.println("MOD: "+ mod(firstIntArg,secondIntArg));
 		print("*:" , multiply(firstIntArg, secondIntArg));
 	}
