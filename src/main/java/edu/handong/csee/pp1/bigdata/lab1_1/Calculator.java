@@ -67,7 +67,7 @@ public class Calculator {
 		System.out.println("input:"+firstArg+" "+ secondArg);
 		print("SUM:" , sum(firstIntArg, secondIntArg));
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
-		print("DV:" , divide(firstIntArg,secondIntArg));
+		System.out.println("DV: " +divide(firstIntArg,secondIntArg));
 		System.out.println("MOD: "+ mod(firstIntArg,secondIntArg));
 		print("*:" , multiply(firstIntArg, secondIntArg));
 	}
@@ -100,8 +100,8 @@ public class Calculator {
 		return first * second;
 	}
 
-	int divide(int first, int second) {
-		int quot = (int)Double.NaN;
+	double divide(int first, int second) {
+		double quot = Double.NaN;
 		try {
 			quot = first/second;
 		} catch(ArithmeticException e) {
